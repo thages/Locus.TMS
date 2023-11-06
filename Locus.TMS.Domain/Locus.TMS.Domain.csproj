@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Location\DataTransferObjects\" />
+    <Folder Include="Location\Enums\" />
+    <Folder Include="Location\Repositories\" />
+    <Folder Include="Transportation\DataTransferObjects\" />
+	<Folder Include="Transportation\Repositories\" />
+  </ItemGroup>
+
+</Project>

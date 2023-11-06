@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <DocumentationFile>LocusTmsSwaggerAnnotion.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Locus.TMS.Application\Locus.TMS.Application.csproj" />
+    <ProjectReference Include="..\Locus.TMS.Domain\Locus.TMS.Domain.csproj" />
+    <ProjectReference Include="..\Locus.TMS.Infrastructure\Locus.TMS.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
