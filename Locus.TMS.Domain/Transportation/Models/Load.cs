@@ -8,6 +8,6 @@ namespace Locus.TMS.Domain.Transportation.Models
         public Load() { }
 
         public LoadStatus LoadStatus { get;  set; }
-    
+        public 
     }
 }
