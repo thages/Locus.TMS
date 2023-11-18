@@ -1,6 +1,8 @@
-﻿using Locus.TMS.Infrastructure.EntityConfigurations;
+﻿using Locus.TMS.Domain.Transportation.Models;
+using Locus.TMS.Infrastructure.EntityConfigurations;
 using Locus.TMS.Infrastructure.EntityConfigurations.Contacts;
 using Locus.TMS.Infrastructure.EntityConfigurations.Fleet;
+using Locus.TMS.Infrastructure.EntityConfigurations.Transportation;
 using Microsoft.EntityFrameworkCore.Design;
 
 namespace Locus.TMS.Infrastructure
@@ -12,7 +14,7 @@ namespace Locus.TMS.Infrastructure
         public DbSet<Driver> Drivers { get; set; }
         public DbSet<Carrier> Carriers { get; set; }
         public DbSet<Customer> Customers { get; set; }
-
+        public DbSet<Load> Loads { get; set; }
         public TmsContext(DbContextOptions<TmsContext> options) : base(options) {}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -22,6 +24,7 @@ namespace Locus.TMS.Infrastructure
             modelBuilder.ApplyConfiguration(new DriverEntityTypeConfiguration());
             modelBuilder.ApplyConfiguration(new CarrierEntityTypeConfiguration());
             modelBuilder.ApplyConfiguration(new CustomerEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new LoadEntityTypeConfiguration());
             base.OnModelCreating(modelBuilder);
         }
     }

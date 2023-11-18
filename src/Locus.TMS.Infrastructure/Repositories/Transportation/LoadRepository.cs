@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Locus.TMS.Domain.Transportation.Enums
+namespace Locus.TMS.Infrastructure.Repositories.Transportation
 {
-    public enum LoadSize
+    internal class LoadRepository
     {
-        FullLoad,
-        PartialLoad
     }
 }

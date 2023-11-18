@@ -14,23 +14,23 @@ namespace Locus.TMS.Domain.Transportation.Enums
         protected Commodity() { }
         protected Commodity(int value, string displayName) : base(value, displayName) { }
 
-        public static readonly Commodity DryGoodsFood = new Dry(0, "Dry Goods (Food)");
-        public static readonly Commodity DryGoodsGeneral = new Dry(1, "Dry Goods (General)");
-        public static readonly Commodity Chemicals = new Hazardous(2, "Chemicals");
-        public static readonly Commodity Explosives = new Hazardous(3, "Explosives");
-        public static readonly Commodity Firearms = new Hazardous(4, "Firearms / Ammunition");
-        public static readonly Commodity HazardousMaterials = new Hazardous(5, "Hazardous Materials");
-        public static readonly Commodity Oil = new Hazardous(6, "Oil / Petrolium");
-        public static readonly Commodity Alcohol = new HighValue(7, "Alcohol");
-        public static readonly Commodity Antiques = new HighValue(8, "Antiques / Work of Arts");
-        public static readonly Commodity Cash = new HighValue(9, "Cash, Checks, Currency");
-        public static readonly Commodity Eletronics = new HighValue(10, "Consumer Eletronics");
-        public static readonly Commodity Jewelry = new HighValue(11, "Jewelry");
-        public static readonly Commodity Tobacco = new HighValue(12, "Tobacco Products");
-        public static readonly Commodity TankerFreight = new Liquid(13, "Tanker Freight");
-        public static readonly Commodity LiveAnimals = new LiveStock(14, "Live Animals");
-        public static readonly Commodity RefrigeratedFood = new TempControlled(15, "Refrigerated (Food)");
-        public static readonly Commodity RefrigeratedGeneral = new TempControlled(16, "Refrigerated (General)");
+        public static readonly Commodity DryGoodsFood = new Dry(1, "Dry Goods (Food)");
+        public static readonly Commodity DryGoodsGeneral = new Dry(2, "Dry Goods (General)");
+        public static readonly Commodity Chemicals = new Hazardous(3, "Chemicals");
+        public static readonly Commodity Explosives = new Hazardous(4, "Explosives");
+        public static readonly Commodity Firearms = new Hazardous(5, "Firearms / Ammunition");
+        public static readonly Commodity HazardousMaterials = new Hazardous(6, "Hazardous Materials");
+        public static readonly Commodity Oil = new Hazardous(7, "Oil / Petrolium");
+        public static readonly Commodity Alcohol = new HighValue(8, "Alcohol");
+        public static readonly Commodity Antiques = new HighValue(9, "Antiques / Work of Arts");
+        public static readonly Commodity Cash = new HighValue(10, "Cash, Checks, Currency");
+        public static readonly Commodity Eletronics = new HighValue(11, "Consumer Eletronics");
+        public static readonly Commodity Jewelry = new HighValue(12, "Jewelry");
+        public static readonly Commodity Tobacco = new HighValue(13, "Tobacco Products");
+        public static readonly Commodity TankerFreight = new Liquid(14, "Tanker Freight");
+        public static readonly Commodity LiveAnimals = new LiveStock(15, "Live Animals");
+        public static readonly Commodity RefrigeratedFood = new TempControlled(16, "Refrigerated (Food)");
+        public static readonly Commodity RefrigeratedGeneral = new TempControlled(17, "Refrigerated (General)");
 
 
         public abstract int Type { get; }

@@ -10,8 +10,10 @@
     <Folder Include="Location\DataTransferObjects\" />
     <Folder Include="Location\Enums\" />
     <Folder Include="Location\Repositories\" />
-    <Folder Include="Transportation\DataTransferObjects\" />
-	<Folder Include="Transportation\Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>

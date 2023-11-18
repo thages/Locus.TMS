@@ -2,9 +2,9 @@
 
 namespace Locus.TMS.Domain.Transportation.Models
 {
-    public class EquipamentLength : ValueObject
+    public class EquipamentSize : ValueObject
     {
-        public EquipamentLength(
+        public EquipamentSize(
             double length, 
             double width, 
             double height, 

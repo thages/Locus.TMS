@@ -12,23 +12,23 @@ namespace Locus.TMS.Domain.Transportation.Enums
         protected VehicleStatus() { }
         protected VehicleStatus(int value, string displayName) : base(value, displayName) { }
 
-        public static readonly VehicleStatus CarrierNeedsSetup = new CarrierSetup(0, "Carrier Needs Setup");
-        public static readonly VehicleStatus SetupPacketSentToCarrier = new CarrierSetup(1, "Setup Packet Sent To Carrier");
-        public static readonly VehicleStatus InsuranceVerificationNeeded = new CarrierSetup(2, "Insurance Verification Needed");
-        public static readonly VehicleStatus CarrierSetupNotComplete = new CarrierSetup(3, "Carrier Setup Not Complete");
-        public static readonly VehicleStatus CarrierSetupComplete = new CarrierSetup(4, "Carrie Setup Complete");
-        public static readonly VehicleStatus AtPriorLoad = new BeforeLoad(5, "At Prior Load");
-        public static readonly VehicleStatus Dispatched = new BeforeLoad(5, "Dispatched");
-        public static readonly VehicleStatus AtPickupWaiting = new DuringLoad(6, "At Pickup - Waiting");
-        public static readonly VehicleStatus AtPickupLoading = new DuringLoad(7, "At Pickup - Loading");
-        public static readonly VehicleStatus OnTime = new DuringLoad(8, "On Time");
-        public static readonly VehicleStatus RunningLate = new DuringLoad(9, "Running Late");
-        public static readonly VehicleStatus AtDeliveryWaiting = new DuringLoad(10, "At Delivery - Waiting");
-        public static readonly VehicleStatus AtDeliveryUnloading = new DuringLoad(11, "At Delivery - Unloading");
-        public static readonly VehicleStatus BrokenDown = new DuringLoad(12, "Broken Down");
-        public static readonly VehicleStatus InAccident = new DuringLoad(13, "In Accident");
-        public static readonly VehicleStatus Empty = new AfterLoad(14, "Empty");
-        public static readonly VehicleStatus DriverPaid = new AfterLoad(15, "Driver Paid");
+        public static readonly VehicleStatus CarrierNeedsSetup = new CarrierSetup(1, "Carrier Needs Setup");
+        public static readonly VehicleStatus SetupPacketSentToCarrier = new CarrierSetup(2, "Setup Packet Sent To Carrier");
+        public static readonly VehicleStatus InsuranceVerificationNeeded = new CarrierSetup(3, "Insurance Verification Needed");
+        public static readonly VehicleStatus CarrierSetupNotComplete = new CarrierSetup(4, "Carrier Setup Not Complete");
+        public static readonly VehicleStatus CarrierSetupComplete = new CarrierSetup(5, "Carrie Setup Complete");
+        public static readonly VehicleStatus AtPriorLoad = new BeforeLoad(6, "At Prior Load");
+        public static readonly VehicleStatus Dispatched = new BeforeLoad(7, "Dispatched");
+        public static readonly VehicleStatus AtPickupWaiting = new DuringLoad(8, "At Pickup - Waiting");
+        public static readonly VehicleStatus AtPickupLoading = new DuringLoad(9, "At Pickup - Loading");
+        public static readonly VehicleStatus OnTime = new DuringLoad(10, "On Time");
+        public static readonly VehicleStatus RunningLate = new DuringLoad(11, "Running Late");
+        public static readonly VehicleStatus AtDeliveryWaiting = new DuringLoad(12, "At Delivery - Waiting");
+        public static readonly VehicleStatus AtDeliveryUnloading = new DuringLoad(13, "At Delivery - Unloading");
+        public static readonly VehicleStatus BrokenDown = new DuringLoad(14, "Broken Down");
+        public static readonly VehicleStatus InAccident = new DuringLoad(15, "In Accident");
+        public static readonly VehicleStatus Empty = new AfterLoad(16, "Empty");
+        public static readonly VehicleStatus DriverPaid = new AfterLoad(17, "Driver Paid");
 
         public abstract int Stage { get; }
 
