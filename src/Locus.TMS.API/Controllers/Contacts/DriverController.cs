@@ -9,14 +9,9 @@ namespace Locus.TMS.API.Controllers.Contacts
     [Route("api/v1/[controller]")]
     //[Authorize]
     [ApiController]
-    public class DriverController : ControllerBase
+    public class DriverController(IMediator mediator) : ControllerBase
     {
-        private readonly IMediator _mediator;
-
-        public DriverController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
+        private readonly IMediator _mediator = mediator;
 
         [Route("drivers")]
         [HttpGet]

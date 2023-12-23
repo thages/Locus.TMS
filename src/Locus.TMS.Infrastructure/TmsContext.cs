@@ -4,6 +4,10 @@ using Locus.TMS.Infrastructure.EntityConfigurations.Contacts;
 using Locus.TMS.Infrastructure.EntityConfigurations.Fleet;
 using Locus.TMS.Infrastructure.EntityConfigurations.Transportation;
 using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+using Microsoft.Extensions.Configuration;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Reflection;
 
 namespace Locus.TMS.Infrastructure
 {
@@ -27,7 +31,9 @@ namespace Locus.TMS.Infrastructure
             modelBuilder.ApplyConfiguration(new LoadEntityTypeConfiguration());
             base.OnModelCreating(modelBuilder);
         }
+
     }
+
     public class TmsContextContextDesignFactory : IDesignTimeDbContextFactory<TmsContext>
     {
         public TmsContext CreateDbContext(string[] args)
@@ -39,4 +45,5 @@ namespace Locus.TMS.Infrastructure
             return new TmsContext(optionsBuilder.Options);
         }
     }
+
 }

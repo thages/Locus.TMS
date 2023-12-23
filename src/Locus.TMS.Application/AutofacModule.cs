@@ -2,11 +2,14 @@
 using Autofac.Features.Variance;
 using Locus.TMS.Application.Contacts.Mappers;
 using Locus.TMS.Application.Fleet.Mappers;
+using Locus.TMS.Application.Transportation.Mappers;
 using Locus.TMS.Domain.Contacts.Repositories;
 using Locus.TMS.Domain.Fleet.Repositories;
+using Locus.TMS.Domain.Transportation.Repositories;
 using Locus.TMS.Infrastructure;
 using Locus.TMS.Infrastructure.Repositories.Contacts;
 using Locus.TMS.Infrastructure.Repositories.Fleet;
+using Locus.TMS.Infrastructure.Repositories.Transportation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -63,11 +66,13 @@ namespace Locus.TMS.Application
             builder.RegisterType<DriverRepository>().As<IDriverRepository>().InstancePerLifetimeScope();
             builder.RegisterType<CarrierRepository>().As<ICarrierRepository>().InstancePerLifetimeScope();
             builder.RegisterType<CustomerRepository>().As<ICustomerRepository>().InstancePerLifetimeScope();
+            builder.RegisterType<LoadRepository>().As<ILoadRepository>().InstancePerLifetimeScope();
             #endregion
 
             #region Mappers
             builder.RegisterType<VehicleMapper>().InstancePerLifetimeScope();
             builder.RegisterType<DriverMapper>().InstancePerLifetimeScope();
+            builder.RegisterType<LoadMapper>().InstancePerLifetimeScope();
             #endregion
         }
     }

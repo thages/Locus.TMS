@@ -1,11 +1,12 @@
 ﻿using Locus.TMS.Domain.Transportation.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Locus.TMS.Infrastructure.EntityConfigurations.Transportation
 {
     internal class LoadEntityTypeConfiguration : IEntityTypeConfiguration<Load>
     {
-        public void Configure(EntityTypeBuilder<Load> builder)
-        {
+       public void Configure(EntityTypeBuilder<Load> builder)
+       {
             builder.ToTable("loads", TmsContext.SCHEMA);
 
             builder.HasKey(e => e.Id);
@@ -17,8 +18,6 @@ namespace Locus.TMS.Infrastructure.EntityConfigurations.Transportation
             builder.Property(e => e._Commodity).HasColumnName("Commodity");
 
             builder.OwnsOne(e => e.EquipamentInformation);
-
-            builder.Property(e => e.EquipamentInformation._EquipamentType).HasColumnName("EquipamentType");
 
             builder.OwnsOne(e => e.EquipamentSize);
         }

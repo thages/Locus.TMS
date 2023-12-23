@@ -11,15 +11,10 @@ namespace Locus.TMS.API.Controllers.Fleet
     [Route("api/v1/[controller]")]
     //[Authorize]
     [ApiController]
-    public class VehicleController : ControllerBase
+    public class VehicleController(IMediator mediator) : ControllerBase
     {
-        private readonly IMediator _mediator;
+        private readonly IMediator _mediator = mediator;
 
-        public VehicleController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
-        
         [Route("vehicles")]
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<VehicleItem>), StatusCodes.Status200OK)]
