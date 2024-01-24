@@ -73,6 +73,8 @@ namespace Locus.TMS.Application
             builder.RegisterType<VehicleMapper>().InstancePerLifetimeScope();
             builder.RegisterType<DriverMapper>().InstancePerLifetimeScope();
             builder.RegisterType<LoadMapper>().InstancePerLifetimeScope();
+            builder.RegisterType<FleetMapper>().InstancePerLifetimeScope();
+
             #endregion
         }
     }

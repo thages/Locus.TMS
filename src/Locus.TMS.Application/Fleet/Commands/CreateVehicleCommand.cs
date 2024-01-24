@@ -1,6 +1,6 @@
 ﻿using Locus.TMS.Application.Common.Commands;
 using Locus.TMS.Domain.Common.Enums;
-using Locus.TMS.Domain.DataTransferObjects.Fleet;
+using Locus.TMS.Domain.Fleet.DataTransferObjects;
 using Locus.TMS.Domain.Fleet.Enums;
 using Locus.TMS.Domain.Fleet.Models;
 

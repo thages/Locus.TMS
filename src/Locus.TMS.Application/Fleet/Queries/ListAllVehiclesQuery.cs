@@ -1,5 +1,5 @@
 ﻿using Locus.TMS.Application.Common.Queries;
-using Locus.TMS.Domain.DataTransferObjects.Fleet;
+using Locus.TMS.Domain.Fleet.DataTransferObjects;
 
 namespace Locus.TMS.Application.Fleet.Queries
 {

@@ -1,7 +1,7 @@
 ﻿using Locus.TMS.Application.Commands.Fleet;
 using Locus.TMS.Application.Common.Handlers;
 using Locus.TMS.Application.Fleet.Mappers;
-using Locus.TMS.Domain.DataTransferObjects.Fleet;
+using Locus.TMS.Domain.Fleet.DataTransferObjects;
 using Locus.TMS.Domain.Fleet.Repositories;
 
 namespace Locus.TMS.Application.Fleet.Handlers

@@ -1,5 +1,5 @@
 ﻿using Locus.TMS.Application.Commands.Fleet;
-using Locus.TMS.Domain.DataTransferObjects.Fleet;
+using Locus.TMS.Domain.Fleet.DataTransferObjects;
 using Locus.TMS.Domain.Fleet.Models;
 using Riok.Mapperly.Abstractions;
 
