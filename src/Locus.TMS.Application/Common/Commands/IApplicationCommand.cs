@@ -2,5 +2,5 @@
 
 namespace Locus.TMS.Application.Common.Commands
 {
-    public interface IApplicationCommand<ReturnObjectType> : IRequest<ReturnObjectType> { }
+    public interface IApplicationCommand<out TReturnObjectType> : IRequest<TReturnObjectType> { }
 }
